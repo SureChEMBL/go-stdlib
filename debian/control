@@ -1,0 +1,33 @@
+Source: golang-github-opentracing-contrib-go-stdlib
+Section: devel
+Priority: extra
+Maintainer: Debian Go Packaging Team <pkg-go-maintainers@lists.alioth.debian.org>
+Uploaders: Martín Ferrari <tincho@debian.org>
+Build-Depends: debhelper (>= 10),
+               dh-golang,
+               golang-any (>= 2:1.7~),
+               golang-github-opentracing-opentracing-go-dev,
+Standards-Version: 4.0.0
+Homepage: https://github.com/opentracing-contrib/go-stdlib
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-go/packages/golang-github-opentracing-contrib-go-stdlib.git
+Vcs-Git: https://anonscm.debian.org/git/pkg-go/packages/golang-github-opentracing-contrib-go-stdlib.git
+XS-Go-Import-Path: github.com/opentracing-contrib/go-stdlib
+Testsuite: autopkgtest-pkg-go
+
+Package: golang-github-opentracing-contrib-go-stdlib-dev
+Architecture: all
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         golang-github-opentracing-opentracing-go-dev,
+Description: OpenTracing instrumentation for packages in the Go stdlib
+ This package contains OpenTracing (http://opentracing.io/) instrumentation for
+ packages in the Go standard library.
+ .
+ Instrumentation is provided for the following packages, with the following
+ caveats:
+ .
+ * net/http: Client and server instrumentation. Only supported with Go 1.7 and
+   later.
+ .
+ For documentation on the packages, check godoc
+ (https://godoc.org/github.com/opentracing-contrib/go-stdlib/).

@@ -1,0 +1,5 @@
+golang-github-opentracing-contrib-go-stdlib (0.0~git20170528.48e4d76-1) unstable; urgency=medium
+
+  * Initial release. Closes: #870195.
+
+ -- Martín Ferrari <tincho@debian.org>  Sun, 30 Jul 2017 21:08:34 +0000
